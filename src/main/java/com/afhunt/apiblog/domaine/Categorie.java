@@ -15,4 +15,11 @@ public class Categorie {
 
     @Column(name="description", nullable=true, length=512)
     private String description;
+
+    public Categorie(String name, String description){
+        this.nom = name;
+        this.description = description;
+    }
+
+    public Categorie(){}
 }
